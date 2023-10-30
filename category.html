@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eBazer - Tailwind CSS eCommerce Admin Template</title>
+    <title>Kachabazar</title>
     <link rel="shortcut icon" href="assets/img/logo/favicon.png" type="image/x-icon">
 
     <!-- css links -->
@@ -134,10 +134,7 @@
                             </a>
                             <ul x-show="nav == 4" class="pl-[42px] pr-[20px] pb-3">
                                 <li>
-                                    <a href="order-list.html" class="block font-normal w-full text-[#6D6F71] hover:text-theme nav-dot">Orders List</a>
-                                </li>
-                                <li>
-                                    <a href="order-details.html" class="block font-normal w-full text-[#6D6F71] hover:text-theme nav-dot">Order Details</a>
+                                    <a href="order-list.html" class="block font-normal w-full text-[#6D6F71] hover:text-theme nav-dot">Orders</a>
                                 </li>
                                 <li>
                                     <a href="transaction.html" class="block font-normal w-full text-[#6D6F71] hover:text-theme nav-dot">Transactions</a>
@@ -188,46 +185,6 @@
                                 Shop Settings
                             </a>
 
-                            <a 
-                            @click="moreNav !== 1 ? moreNav = 1 : moreNav = null"  
-                            :class="moreNav == 1 ? 'bg-themeLight hover:bg-themeLight text-theme' : ''" 
-                            href="javascript:void(0);" 
-                            class="group rounded-md relative text-black text-lg font-medium inline-flex items-center w-full transition-colors ease-in-out duration-300 px-5 py-[9px] mb-3 hover:bg-gray sidebar-link-active">
-                                <span class="inline-block translate-y-[1px] mr-[10px] text-xl" >
-                                    <svg class="-translate-y-[5px]" height="16" viewBox="-78 -18 560 560.00187" width="16" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="currentColor" d="m260.722656 3.878906-.128906-.125c-2.355469-2.429687-5.605469-3.7890622-8.996094-3.74999975-.417968-.01953125-.839844.01953125-1.25.12890575h-191.953125c-34.503906.007813-62.46875 27.976563-62.484375 62.484376v399.898437c.015625 34.503906 27.980469 62.472656 62.484375 62.484375h278.308594c34.503906-.011719 62.472656-27.980469 62.484375-62.484375v-315.175781c-.023438-3.308594-1.320312-6.484375-3.625-8.867188zm3.371094 38.742188 92.726562 92.476562h-55.234374c-20.679688-.0625-37.433594-16.8125-37.492188-37.488281zm72.734375 457.261718h-278.433594c-20.679687-.058593-37.425781-16.8125-37.492187-37.492187v-399.902344c.066406-20.675781 16.8125-37.429687 37.492187-37.488281h180.707031v72.609375c.011719 34.5 27.980469 62.46875 62.484376 62.484375h72.609374v302.296875c.039063 20.671875-16.695312 37.464844-37.367187 37.492187zm0 0"/>
-                                        <path fill="currentColor" d="m76.015625 241.195312h135.09375c6.898437 0 12.5-5.59375 12.5-12.496093 0-6.902344-5.601563-12.496094-12.5-12.496094h-135.09375c-6.902344 0-12.496094 5.59375-12.496094 12.496094 0 6.902343 5.59375 12.496093 12.496094 12.496093zm0 0"/>
-                                        <path fill="currentColor" d="m319.207031 310.679688h-243.191406c-6.902344 0-12.496094 5.59375-12.496094 12.496093 0 6.898438 5.59375 12.496094 12.496094 12.496094h243.191406c6.898438 0 12.5-5.597656 12.5-12.496094 0-6.902343-5.601562-12.496093-12.5-12.496093zm0 0"/>
-                                        <path fill="currentColor" d="m319.207031 405.28125h-243.191406c-6.902344 0-12.496094 5.59375-12.496094 12.496094s5.59375 12.496094 12.496094 12.496094h243.191406c6.898438 0 12.5-5.59375 12.5-12.496094s-5.601562-12.496094-12.5-12.496094zm0 0"/>
-                                        </svg>
-                                </span>
-                                Pages
-
-                                <span class="absolute right-4 top-[52%] transition-transform duration-300 origin-center w-4 h-4" :class="moreNav == 1 ? 'translate-y-[-10px] rotate-90' : 'translate-y-[-10px]'">
-                                    <svg class="-translate-y-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/></svg>
-                                </span>
-                            </a>
-                            <ul x-show="moreNav == 1" class="pl-[42px] pr-[20px] pb-3">
-                                <li>
-                                    <a href="blank.html" class="block font-normal w-full text-[#6D6F71] hover:text-theme nav-dot">Blank Page</a>
-                                </li>
-                                <li>
-                                    <a href="register.html" class="block font-normal w-full text-[#6D6F71] hover:text-theme nav-dot">Register</a>
-                                </li>
-                                <li>
-                                    <a href="login.html" class="block font-normal w-full text-[#6D6F71] hover:text-theme nav-dot">Login</a>
-                                </li>
-                                <li>
-                                    <a href="forgot.html" class="block font-normal w-full text-[#6D6F71] hover:text-theme nav-dot">Forgot Password</a>
-                                </li>
-                                <li>
-                                    <a href="otp.html" class="block font-normal w-full text-[#6D6F71] hover:text-theme nav-dot">Verify OTP</a>
-                                </li>
-                                <li>
-                                    <a href="verify-mail.html" class="block font-normal w-full text-[#6D6F71] hover:text-theme nav-dot">Verify Mail</a>
-                                </li>
-                            </ul>
-                        
                     </div>
                 </div>
             </div>

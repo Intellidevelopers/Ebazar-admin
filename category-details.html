@@ -411,135 +411,85 @@
             </header>
 
             <div class="body-content px-8 py-8 bg-slate-100">
-            <div class="flex justify-between mb-10">
-                <div class="page-title">
-                    <h3 class="mb-0 text-[28px]">Product details</h3>
-                    <ul class="text-tiny font-medium flex items-center space-x-3 text-text3">
-                        <li class="breadcrumb-item text-muted">
-                            <a href="product-list.html" class="text-hover-primary"> Home</a>
-                        </li>
-                        <li class="breadcrumb-item flex items-center">
-                            <span class="inline-block bg-text3/60 w-[4px] h-[4px] rounded-full"></span>
-                        </li>
-                        <li class="breadcrumb-item text-muted">Product</li>
-                                       
-                    </ul>
+                <div class="flex justify-between mb-10">
+                    <div class="page-title">
+                        <h3 class="mb-0 text-[28px]">Category details</h3>
+                        <ul class="text-tiny font-medium flex items-center space-x-3 text-text3">
+                            <li class="breadcrumb-item text-muted">
+                                <a href="category.html" class="text-hover-primary"> Home</a>
+                            </li>
+                            <li class="breadcrumb-item flex items-center">
+                                <span class="inline-block bg-text3/60 w-[4px] h-[4px] rounded-full"></span>
+                            </li>
+                            <li class="breadcrumb-item text-muted">Category</li>
+                                           
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <!-- table -->
-            <div class="bg-white rounded-t-md rounded-b-md shadow-xs py-4">
-                <div class="tp-search-box flex items-center justify-between px-8 py-8">
-                    
-                        <div class="product-add-btn flex ">
-                            <a href="add-product.html" class="tp-btn">Add product</a>
+                <!-- table -->
+                <div class="bg-white rounded-t-md rounded-b-md shadow-xs py-4">
+                    <div class="tp-search-box flex items-center justify-between px-8 py-8">
+                        
+                            <div class="product-add-btn flex ">
+                                <a href="category.html" class="tp-btn">Create Category</a>
+                            </div>
                         </div>
-                    </div>
-                
-                <div class="relative overflow-x-auto  mx-8">
-                    <table class="w-full text-base text-left text-gray-500">
-<!-- Sidemenu closed -->                    <div class="app-content icon-content">
-            <div class="section">
-                <style>
-                    body {
-                        font-family: Arial, sans-serif;
-                        margin: 0;
-                        padding: 0;
-                        box-sizing: border-box;
-                    }
-            
-                    .product-container {
-                        display: flex;
-                        flex-direction: column; /* Stack items vertically on small screens */
-                        max-width: 800px;
-                        margin: 20px auto;
-                        border: 1px solid #ddd;
-                        padding: 20px;
-                    }
-            
-                    .product-image {
-                        margin-bottom: 20px;
-                    }
-            
-                    .product-image img {
-                        max-width: 100%;
-                        height: auto;
-                    }
-            
-                    .product-details {
-                        flex: 1;
-                    }
-            
-                    .product-name {
-                        font-size: 24px;
-                        font-weight: bold;
-                        margin-bottom: 10px;
-                    }
-            
-                    .subname {
-                        font-size: 18px;
-                        color: #666;
-                        margin-bottom: 10px;
-                    }
-            
-                    .product-price {
-                        font-size: 20px;
-                        color: green;
-                        margin-bottom: 10px;
-                    }
-            
-                    .category {
-                        font-size: 16px;
-                        color: #444;
-                        margin-bottom: 10px;
-                        font-weight: 600;
-                    }
-            
-                    .product-description {
-                        margin-bottom: 20px;
-                    }
-            
-                    .add-to-cart {
-                        display: inline-block;
-                        padding: 10px 20px;
-                        background-color: green;
-                        color: #fff;
-                        text-decoration: none;
-                        font-size: 18px;
-                        cursor: pointer;
-                        text-align: center;
-                    }
-            
-                    /* Media Query for Small Screens (up to 600px) */
-                    @media only screen and (max-width: 600px) {
-                        .product-container {
-                            padding: 10px;
-                        }
-            
-                        .product-image {
-                            order: -1; /* Move image above details on small screens */
-                        }
-                    }
-                </style>
-                <title>Product Details</title>
-            </head>
-            <body>
-            
-            <div class="product-container">
-                <div class="product-image">
-                    <img src="./assets/img/product/prodcut-1.jpg" alt="Product Image">
-                </div>
-                <div class="product-details">
-                    <div class="product-name">Whitetail's</div>
-                    <div class="subname">Jacket</div>
-                    <div class="product-price">$99.99</div>
-                    <div class="category">Category: Fashion</div>
-                    <div class="product-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <a href="#" class="add-to-cart">Add to Cart</a>
-                </div>
-            </div>
+                    
+                    <div class="relative overflow-x-auto  mx-8">
+                        <table class="w-full text-base text-left text-gray-500">
+ <!-- Sidemenu closed -->                    <div class="app-content icon-content">
+    <div class="section">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: #f4f4f4;
+            }
+    
+            .category-details-container {
+                max-width: 800px;
+                margin: 50px auto;
+                background-color: #fff;
+                padding: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+    
+            .category-details {
+                display: grid;
+                gap: 20px;
+            }
+    
+            .category-details img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
+    
+            .category-details h2 {
+                font-size: 24px;
+                margin: 0;
+            }
+    
+            .category-details p {
+                margin: 0
+            }
+        </style>
+        <title>Category Details</title>
+    </head>
+    <body>
+    
+    <div class="category-details-container">
+        <div class="category-details">
+            <img src="./assets/img/logo/logo.svg" alt="Category Image">
+            <h2>Fashion</h2>
+            <p>Slug: category-slug</p>
+            <p>Parent Category: Women</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
 
 
                         </table>

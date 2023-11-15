@@ -545,7 +545,7 @@
                                                 </div>
                                             </div>
                                             <div class="relative" x-data="{ deleteTooltip: false }">
-                                                <button 
+                                                <button onclick="confirmDelete()"
                                                 class="w-10 h-10 leading-[33px] text-tiny bg-white border border-gray text-slate-600 rounded-md hover:bg-danger hover:border-danger hover:text-white"
                                                 x-on:mouseenter="deleteTooltip = true" x-on:mouseleave="deleteTooltip = false"
                                                 >
@@ -617,7 +617,7 @@
                                                 </div>
                                             </div>
                                             <div class="relative" x-data="{ deleteTooltip: false }">
-                                                <button 
+                                                <button onclick="confirmDelete()"
                                                 class="w-10 h-10 leading-[33px] text-tiny bg-white border border-gray text-slate-600 rounded-md hover:bg-danger hover:border-danger hover:text-white"
                                                 x-on:mouseenter="deleteTooltip = true" x-on:mouseleave="deleteTooltip = false"
                                                 >
@@ -689,7 +689,7 @@
                                                 </div>
                                             </div>
                                             <div class="relative" x-data="{ deleteTooltip: false }">
-                                                <button 
+                                                <button onclick="confirmDelete()"
                                                 class="w-10 h-10 leading-[33px] text-tiny bg-white border border-gray text-slate-600 rounded-md hover:bg-danger hover:border-danger hover:text-white"
                                                 x-on:mouseenter="deleteTooltip = true" x-on:mouseleave="deleteTooltip = false"
                                                 >
@@ -761,7 +761,7 @@
                                                 </div>
                                             </div>
                                             <div class="relative" x-data="{ deleteTooltip: false }">
-                                                <button 
+                                                <button onclick="confirmDelete()"
                                                 class="w-10 h-10 leading-[33px] text-tiny bg-white border border-gray text-slate-600 rounded-md hover:bg-danger hover:border-danger hover:text-white"
                                                 x-on:mouseenter="deleteTooltip = true" x-on:mouseleave="deleteTooltip = false"
                                                 >
@@ -833,7 +833,7 @@
                                                 </div>
                                             </div>
                                             <div class="relative" x-data="{ deleteTooltip: false }">
-                                                <button 
+                                                <button onclick="confirmDelete()"
                                                 class="w-10 h-10 leading-[33px] text-tiny bg-white border border-gray text-slate-600 rounded-md hover:bg-danger hover:border-danger hover:text-white"
                                                 x-on:mouseenter="deleteTooltip = true" x-on:mouseleave="deleteTooltip = false"
                                                 >
@@ -905,7 +905,7 @@
                                                 </div>
                                             </div>
                                             <div class="relative" x-data="{ deleteTooltip: false }">
-                                                <button 
+                                                <button onclick="confirmDelete()"
                                                 class="w-10 h-10 leading-[33px] text-tiny bg-white border border-gray text-slate-600 rounded-md hover:bg-danger hover:border-danger hover:text-white"
                                                 x-on:mouseenter="deleteTooltip = true" x-on:mouseleave="deleteTooltip = false"
                                                 >
@@ -977,7 +977,7 @@
                                                 </div>
                                             </div>
                                             <div class="relative" x-data="{ deleteTooltip: false }">
-                                                <button 
+                                                <button onclick="confirmDelete()"
                                                 class="w-10 h-10 leading-[33px] text-tiny bg-white border border-gray text-slate-600 rounded-md hover:bg-danger hover:border-danger hover:text-white"
                                                 x-on:mouseenter="deleteTooltip = true" x-on:mouseleave="deleteTooltip = false"
                                                 >
@@ -1049,7 +1049,7 @@
                                                 </div>
                                             </div>
                                             <div class="relative" x-data="{ deleteTooltip: false }">
-                                                <button 
+                                                <button onclick="confirmDelete()"
                                                 class="w-10 h-10 leading-[33px] text-tiny bg-white border border-gray text-slate-600 rounded-md hover:bg-danger hover:border-danger hover:text-white"
                                                 x-on:mouseenter="deleteTooltip = true" x-on:mouseleave="deleteTooltip = false"
                                                 >
@@ -1102,6 +1102,10 @@
     <script src="assets/js/quill.js"></script>
     <script src="assets/js/rangeslider.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="sweetAlert.js"></script>
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     
 </body>
 

@@ -411,135 +411,145 @@
             </header>
 
             <div class="body-content px-8 py-8 bg-slate-100">
-            <div class="flex justify-between mb-10">
-                <div class="page-title">
-                    <h3 class="mb-0 text-[28px]">Product details</h3>
-                    <ul class="text-tiny font-medium flex items-center space-x-3 text-text3">
-                        <li class="breadcrumb-item text-muted">
-                            <a href="product-list.html" class="text-hover-primary"> Home</a>
-                        </li>
-                        <li class="breadcrumb-item flex items-center">
-                            <span class="inline-block bg-text3/60 w-[4px] h-[4px] rounded-full"></span>
-                        </li>
-                        <li class="breadcrumb-item text-muted">Product</li>
-                                       
-                    </ul>
+                <div class="flex justify-between mb-10">
+                    <div class="page-title">
+                        <h3 class="mb-0 text-[28px]">Edit coupon</h3>
+                        <ul class="text-tiny font-medium flex items-center space-x-3 text-text3">
+                            <li class="breadcrumb-item text-muted">
+                                <a href="product-list.html" class="text-hover-primary"> Home</a>
+                            </li>
+                            <li class="breadcrumb-item flex items-center">
+                                <span class="inline-block bg-text3/60 w-[4px] h-[4px] rounded-full"></span>
+                            </li>
+                            <li class="breadcrumb-item text-muted">Coupon</li>
+                                           
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <!-- table -->
-            <div class="bg-white rounded-t-md rounded-b-md shadow-xs py-4">
-                <div class="tp-search-box flex items-center justify-between px-8 py-8">
-                    
-                        <div class="product-add-btn flex ">
-                            <a href="add-product.html" class="tp-btn">Add product</a>
+                <!-- table -->
+                <div class="bg-white rounded-t-md rounded-b-md shadow-xs py-4">
+                    <div class="tp-search-box flex items-center justify-between px-8 py-8">
+                        
+                            <div class="product-add-btn flex ">
+                                <a href="category.html" class="tp-btn">Create Coupon</a>
+                            </div>
                         </div>
-                    </div>
-                
-                <div class="relative overflow-x-auto  mx-8">
-                    <table class="w-full text-base text-left text-gray-500">
-<!-- Sidemenu closed -->                    <div class="app-content icon-content">
-            <div class="section">
-                <style>
-                    body {
-                        font-family: Arial, sans-serif;
-                        margin: 0;
-                        padding: 0;
-                        box-sizing: border-box;
-                    }
-            
-                    .product-container {
-                        display: flex;
-                        flex-direction: column; /* Stack items vertically on small screens */
-                        max-width: 800px;
-                        margin: 20px auto;
-                        border: 1px solid #ddd;
-                        padding: 20px;
-                    }
-            
-                    .product-image {
-                        margin-bottom: 20px;
-                    }
-            
-                    .product-image img {
-                        max-width: 100%;
-                        height: auto;
-                    }
-            
-                    .product-details {
-                        flex: 1;
-                    }
-            
-                    .product-name {
-                        font-size: 24px;
-                        font-weight: bold;
-                        margin-bottom: 10px;
-                    }
-            
-                    .subname {
-                        font-size: 18px;
-                        color: #666;
-                        margin-bottom: 10px;
-                    }
-            
-                    .product-price {
-                        font-size: 20px;
-                        color: green;
-                        margin-bottom: 10px;
-                    }
-            
-                    .category {
-                        font-size: 16px;
-                        color: #444;
-                        margin-bottom: 10px;
-                        font-weight: 600;
-                    }
-            
-                    .product-description {
-                        margin-bottom: 20px;
-                    }
-            
-                    .add-to-cart {
-                        display: inline-block;
-                        padding: 10px 20px;
-                        background-color: green;
-                        color: #fff;
-                        text-decoration: none;
-                        font-size: 18px;
-                        cursor: pointer;
-                        text-align: center;
-                    }
-            
-                    /* Media Query for Small Screens (up to 600px) */
-                    @media only screen and (max-width: 600px) {
-                        .product-container {
-                            padding: 10px;
-                        }
-            
-                        .product-image {
-                            order: -1; /* Move image above details on small screens */
-                        }
-                    }
-                </style>
-                <title>Product Details</title>
-            </head>
-            <body>
-            
-            <div class="product-container">
-                <div class="product-image">
-                    <img src="./assets/img/product/prodcut-1.jpg" alt="Product Image">
-                </div>
-                <div class="product-details">
-                    <div class="product-name">Whitetail's</div>
-                    <div class="subname">Jacket</div>
-                    <div class="product-price">$99.99</div>
-                    <div class="category">Category: Fashion</div>
-                    <div class="product-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <a href="#" class="add-to-cart">Add to Cart</a>
-                </div>
-            </div>
+                    
+                    <div class="relative overflow-x-auto  mx-8">
+                        <table class="w-full text-base text-left text-gray-500">
+ <!-- Sidemenu closed -->                    <div class="app-content icon-content">
+    <div class="section">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: #f4f4f4;
+            }
+    
+          
+    
+            .coupon-form {
+                display: grid;
+                gap: 20px;
+            }
+    
+            .coupon-form label {
+                font-weight: bold;
+            }
+    
+            .coupon-form input,
+            .coupon-form select {
+                width: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+                margin-top: 5px;
+                margin-bottom: 15px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+    
+            .coupon-form input[type="checkbox"] {
+                margin-top: 0;
+            }
+    
+            .add-coupon-btn {
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: rgb(29, 142, 235);
+                color: #fff;
+                text-decoration: none;
+                font-size: 18px;
+                cursor: pointer;
+                border: none;
+                border-radius: 5px;
+            }
+            .coupon-label{
+                font-weight: 500;
+            }
+            input{
+                border: 1px solid lightgray;
+                width: 100%;
+                padding: 7px;
+                border-radius: 4px;
+                outline: none;
+            }
+            select{
+                padding: 7px;
+                width: 100%;
+                font-weight: 500;
+                outline: none;
+                border: 1px solid lightgray;
+                border-radius: 4px;
+            }
+           
+        </style>
+        <title>Edit Coupon</title>
+    </head>
+    <body>
+    
+    <div class="coupon-container">
+        <h2>Edit Coupon</h2>
+        <form class="coupon-form">
+            <label for="coupon-image" class="coupon-label">Coupon Image</label><br>
+            <input type="file" id="coupon-image" name="coupon-image">
+            <br>
+            <br>
+            <label for="coupon-name" class="coupon-label">Coupon Name</label>
+            <br>
+            <input type="text" id="coupon-name" name="coupon-name" required>
+            <br>
+            <label for="coupon-code" class="coupon-label">Coupon Code</label>
+            <br>
+            <input type="text" id="coupon-code" name="coupon-code" required>
+            <br>
+            <label for="end-time" class="coupon-label">End Time</label>
+            <input type="datetime-local" id="end-time" name="end-time" required>
+            <br>
+            <label for="discount-type" class="coupon-label">Discount Type</label>
+            <br>
+            <select id="discount-type" name="discount-type" required>
+                <option value="percentage">Percentage</option>
+                <option value="fixed">Fixed Amount</option>
+            </select>
+            <br>
+            <label for="max-amount" class="coupon-label">Maximum Amount</label>
+            <input type="number" id="max-amount" name="max-amount" placeholder="$20.00 - $50.00">
+            <br>
+
+            <label for="discount-type" class="coupon-label">Choose status</label>
+            <br>
+            <select id="discount-type" name="discount-type" required>
+                <option value="percentage">Publish</option>
+                <option value="fixed">Later</option>
+            </select>
+            <br>
+            <br>
+            <button type="button" class="add-coupon-btn">Add Coupon</button>
+        </form>
+    </div>
 
 
                         </table>

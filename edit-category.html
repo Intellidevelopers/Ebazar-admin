@@ -411,135 +411,74 @@
             </header>
 
             <div class="body-content px-8 py-8 bg-slate-100">
-            <div class="flex justify-between mb-10">
-                <div class="page-title">
-                    <h3 class="mb-0 text-[28px]">Product details</h3>
-                    <ul class="text-tiny font-medium flex items-center space-x-3 text-text3">
-                        <li class="breadcrumb-item text-muted">
-                            <a href="product-list.html" class="text-hover-primary"> Home</a>
-                        </li>
-                        <li class="breadcrumb-item flex items-center">
-                            <span class="inline-block bg-text3/60 w-[4px] h-[4px] rounded-full"></span>
-                        </li>
-                        <li class="breadcrumb-item text-muted">Product</li>
-                                       
-                    </ul>
+                <div class="flex justify-between mb-10">
+                    <div class="page-title">
+                        <h3 class="mb-0 text-[28px]">Edit category</h3>
+                        <ul class="text-tiny font-medium flex items-center space-x-3 text-text3">
+                            <li class="breadcrumb-item text-muted">
+                                <a href="product-list.html" class="text-hover-primary"> Home</a>
+                            </li>
+                            <li class="breadcrumb-item flex items-center">
+                                <span class="inline-block bg-text3/60 w-[4px] h-[4px] rounded-full"></span>
+                            </li>
+                            <li class="breadcrumb-item text-muted">Categories</li>
+                                           
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
-            <!-- table -->
-            <div class="bg-white rounded-t-md rounded-b-md shadow-xs py-4">
-                <div class="tp-search-box flex items-center justify-between px-8 py-8">
+                <!-- table -->
+                <div class="bg-white rounded-t-md rounded-b-md shadow-xs py-4">
+                    <div class="tp-search-box flex items-center justify-between px-8 py-8">
+                        
+                            <div class="product-add-btn flex ">
+                                <a href="category.html" class="tp-btn">Create Category</a>
+                            </div>
+                        </div>
                     
-                        <div class="product-add-btn flex ">
-                            <a href="add-product.html" class="tp-btn">Add product</a>
+                    <div class="relative overflow-x-auto  mx-8">
+                        <table class="w-full text-base text-left text-gray-500">
+ <!-- Sidemenu closed -->                    <div class="app-content icon-content">
+    <div class="section">
+        <section class="section">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Update Category</h4>
+                            <br>
+                            <hr>
+                            <br>
+                            <form action="" class="edit-category">                               <div class="form-group">
+                                    <label class="category-name">Category name</label>
+                                    <br>
+                                    <input type="text" name="cname" class="education" value="Educations" />
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label class="category-name">Category Banner</label>
+                                    <input type="file" name="image" class="file" />
+                                    <br>
+                                    <br>
+                                    <img src="https://bincomtest.mezutech.com/blog/upload/1693159869922553661.jpg" alt="" class="img-fluid" style="height: 100px;">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label>Select Status</label>
+                                    <br>
+                                    <select name="status" class="select">
+                                        <option value="pending">Pending</option>
+                                        <option value="approved">Approved</option>
+                                    </select>
+                                </div>
+                                <div class="form-btn">
+                                    <button type="submit" class="btn btn-primary " name="submit">Update</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                
-                <div class="relative overflow-x-auto  mx-8">
-                    <table class="w-full text-base text-left text-gray-500">
-<!-- Sidemenu closed -->                    <div class="app-content icon-content">
-            <div class="section">
-                <style>
-                    body {
-                        font-family: Arial, sans-serif;
-                        margin: 0;
-                        padding: 0;
-                        box-sizing: border-box;
-                    }
-            
-                    .product-container {
-                        display: flex;
-                        flex-direction: column; /* Stack items vertically on small screens */
-                        max-width: 800px;
-                        margin: 20px auto;
-                        border: 1px solid #ddd;
-                        padding: 20px;
-                    }
-            
-                    .product-image {
-                        margin-bottom: 20px;
-                    }
-            
-                    .product-image img {
-                        max-width: 100%;
-                        height: auto;
-                    }
-            
-                    .product-details {
-                        flex: 1;
-                    }
-            
-                    .product-name {
-                        font-size: 24px;
-                        font-weight: bold;
-                        margin-bottom: 10px;
-                    }
-            
-                    .subname {
-                        font-size: 18px;
-                        color: #666;
-                        margin-bottom: 10px;
-                    }
-            
-                    .product-price {
-                        font-size: 20px;
-                        color: green;
-                        margin-bottom: 10px;
-                    }
-            
-                    .category {
-                        font-size: 16px;
-                        color: #444;
-                        margin-bottom: 10px;
-                        font-weight: 600;
-                    }
-            
-                    .product-description {
-                        margin-bottom: 20px;
-                    }
-            
-                    .add-to-cart {
-                        display: inline-block;
-                        padding: 10px 20px;
-                        background-color: green;
-                        color: #fff;
-                        text-decoration: none;
-                        font-size: 18px;
-                        cursor: pointer;
-                        text-align: center;
-                    }
-            
-                    /* Media Query for Small Screens (up to 600px) */
-                    @media only screen and (max-width: 600px) {
-                        .product-container {
-                            padding: 10px;
-                        }
-            
-                        .product-image {
-                            order: -1; /* Move image above details on small screens */
-                        }
-                    }
-                </style>
-                <title>Product Details</title>
-            </head>
-            <body>
-            
-            <div class="product-container">
-                <div class="product-image">
-                    <img src="./assets/img/product/prodcut-1.jpg" alt="Product Image">
-                </div>
-                <div class="product-details">
-                    <div class="product-name">Whitetail's</div>
-                    <div class="subname">Jacket</div>
-                    <div class="product-price">$99.99</div>
-                    <div class="category">Category: Fashion</div>
-                    <div class="product-description">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    </div>
-                    <a href="#" class="add-to-cart">Add to Cart</a>
                 </div>
             </div>
+        </section>
 
 
                         </table>

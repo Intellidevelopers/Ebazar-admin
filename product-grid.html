@@ -358,8 +358,8 @@
                                         <img class="w-[50px] h-[50px] rounded-md" src="assets/img/users/user-10.jpg" alt="">
                                     </div>
                                     <div class="">
-                                        <h5 class="text-base mb-1 leading-none">Shahnewaz</h5>
-                                        <p class="mb-0 text-tiny leading-none">shahnewaz@mail.com</p>
+                                        <h5 class="text-base mb-1 leading-none">Adeagbo Josiah</h5>
+                                        <p class="mb-0 text-tiny leading-none">speedafhost@mail.com</p>
                                     </div>
                                 </div>
                                 <ul>
@@ -465,7 +465,8 @@
                                     <div class="absolute top-5 right-5 z-10">
                                         <div class="flex flex-col items-center justify-center space-y-2">
                                             <div class="relative" x-data="{ editTooltip: false }">
-                                                <button 
+                                                <a href="edit-product.html">
+                                                    <button 
                                                 class="w-10 h-10 leading-10 text-tiny bg-success text-white rounded-md hover:bg-green-600"
                                                 x-on:mouseenter="editTooltip = true" x-on:mouseleave="editTooltip = false"
                                                 >
@@ -474,13 +475,14 @@
                                                     <path fill="currentColor" d="m476.875 45.523438-30.164062-30.164063c-20.160157-20.160156-55.296876-20.140625-75.433594 0l-36.949219 36.949219 105.597656 105.597656 36.949219-36.949219c10.070312-10.066406 15.617188-23.464843 15.617188-37.714843s-5.546876-27.648438-15.617188-37.71875zm0 0"/>
                                                 </svg>
                                                 </button>
+                                                </a>
                                                 <div x-show="editTooltip" class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]">
                                                     <span class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block">Edit</span>
                                                     <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
                                                 </div>
                                             </div>
                                             <div class="relative" x-data="{ deleteTooltip: false }">
-                                                <button 
+                                                <button onclick="confirmDelete()"
                                                 class="w-10 h-10 leading-[33px] text-tiny bg-white border border-gray text-slate-600 rounded-md hover:bg-danger hover:border-danger hover:text-white"
                                                 x-on:mouseenter="deleteTooltip = true" x-on:mouseleave="deleteTooltip = false"
                                                 >
@@ -522,7 +524,8 @@
                                     <div class="absolute top-5 right-5 z-10">
                                         <div class="flex flex-col items-center justify-center space-y-2">
                                             <div class="relative" x-data="{ editTooltip: false }">
-                                                <button 
+                                                <a href="edit-product.html">
+                                                    <button 
                                                 class="w-10 h-10 leading-10 text-tiny bg-success text-white rounded-md hover:bg-green-600"
                                                 x-on:mouseenter="editTooltip = true" x-on:mouseleave="editTooltip = false"
                                                 >
@@ -531,13 +534,14 @@
                                                     <path fill="currentColor" d="m476.875 45.523438-30.164062-30.164063c-20.160157-20.160156-55.296876-20.140625-75.433594 0l-36.949219 36.949219 105.597656 105.597656 36.949219-36.949219c10.070312-10.066406 15.617188-23.464843 15.617188-37.714843s-5.546876-27.648438-15.617188-37.71875zm0 0"/>
                                                 </svg>
                                                 </button>
+                                                </a>
                                                 <div x-show="editTooltip" class="flex items-center z-50 absolute right-full translate-y-1/2 bottom-1/2 mr-1 mb-[2px]">
                                                     <span class="relative z-10 p-2 text-tiny leading-none font-medium text-white whitespace-no-wrap w-max bg-slate-800 rounded py-1 px-2 inline-block">Edit</span>
                                                     <div class="w-[6px] h-[6px] -ml-[3px] rotate-45 bg-slate-800"></div>
                                                 </div>
                                             </div>
                                             <div class="relative" x-data="{ deleteTooltip: false }">
-                                                <button 
+                                                <button onclick="confirmDelete()"
                                                 class="w-10 h-10 leading-[33px] text-tiny bg-white border border-gray text-slate-600 rounded-md hover:bg-danger hover:border-danger hover:text-white"
                                                 x-on:mouseenter="deleteTooltip = true" x-on:mouseleave="deleteTooltip = false"
                                                 >
